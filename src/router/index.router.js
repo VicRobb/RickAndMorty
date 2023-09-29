@@ -5,18 +5,23 @@ const router = createRouter({
     routes: [
 				{
 				  path: "/:catchAll(.*)",
-				  redirect: { name: "Error" },
-                },
-                {
-                path: '/',
-                name: 'Home',
-                component: () => import('../views/Home.vue'),
-                },
-                        {
-                path: '/error',
-                name: 'Error',
-                component: () => import('../views/Error.vue'),
-                },
+				  redirect: { name: "Home" },
+        },
+        {
+          path: '/',
+          name: 'Home',
+          component: () => import('../views/Home.vue'),
+        },
+        {
+          path: '/location',
+          name: 'Location',
+          component: () => import('../views/Location.vue'),
+        },
+        {
+          path: '/episode',
+          name: 'Episode',
+          component: () => import('../views/Episode.vue'),
+        },
     ]
 })
 

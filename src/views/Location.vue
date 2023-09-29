@@ -1,3 +1,3 @@
 <template>
-<div>Error</div>
+<div>Location</div>
 </template>
